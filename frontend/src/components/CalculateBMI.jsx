@@ -24,7 +24,7 @@ export const CalculateBMI = () => {
   const handleSubmit = () => {
     //    setData([...data, payload])
     axios
-      .post("http://localhost:3001/calculateBMI", payload, {
+      .post("https://bmi-backend-gw0m.onrender.com/calculateBMI", payload, {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`,

@@ -25,7 +25,7 @@ export const Signup = () => {
   const handleSubmit = () => {
     //    setData([...data, payload])
     axios
-      .post("http://localhost:3001/signup", payload)
+      .post("https://bmi-backend-gw0m.onrender.com/signup", payload)
       .then((r) => console.log(r.data),
        navigate('/login'));
   };

@@ -10,7 +10,7 @@ export const Profile = () => {
   
   useEffect(() => {
 
-    axios.get('http://localhost:3001/getProfile',{
+    axios.get('https://bmi-backend-gw0m.onrender.com/getProfile',{
       headers: {
        "Content-Type": "application/json",
        Authorization: `Bearer ${localStorage.getItem("token")}`,

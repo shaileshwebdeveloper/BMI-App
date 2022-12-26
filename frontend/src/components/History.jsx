@@ -8,7 +8,7 @@ export const History = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3001/getCalculation", {
+      .get("https://bmi-backend-gw0m.onrender.com/getCalculation", {
         headers: {
           "Content-Type": "application/json",
           Authorization: `Bearer ${localStorage.getItem("token")}`,

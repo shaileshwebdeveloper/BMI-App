@@ -30,7 +30,7 @@ export const Login = () => {
      const handleSubmit = () => {
 
     //    setData([...data, payload])
-         axios.post('http://localhost:3001/login', payload)
+         axios.post('https://bmi-backend-gw0m.onrender.com/login', payload)
          .then(r =>  localStorage.setItem('token', r.data.token),
             setIsAuth(true), 
           navigate('/calculateBMI'))
